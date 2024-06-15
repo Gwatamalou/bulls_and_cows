@@ -12,3 +12,5 @@ def intersections_number(key_number, user_number):
             elif key_number[i] == user_number[j]:
                 cow +=1
     return bull, cow, False
+
+
