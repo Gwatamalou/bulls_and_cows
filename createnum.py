@@ -1,12 +1,12 @@
 import random
 
+
 def generator_number():
     """Возврощает сгнерированное четырехзначное число
     """
-    x = ''.join(random.sample('0123456789', 4))
-    if x[0] == '0':
-        return generator_number()
+    x = ''.join(random.sample('123456789', 1) + random.sample('0123456789', 3))
     return x
+
 
 def check_enter_number(x):
     """Проверяет введеное число на корректность
@@ -18,4 +18,3 @@ def check_enter_number(x):
         if i != x.find(x[i]):
             return False
     return True
-
